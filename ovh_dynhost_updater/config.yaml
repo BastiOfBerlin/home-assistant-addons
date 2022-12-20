@@ -1,0 +1,32 @@
+name: 'OVH DynHost Updater'
+description: "Add-on to update A/AAAA records of OVH's DynHost."
+version: '0.0.1'
+stage: experimental
+slug: 'ovh_dynhost_updater'
+panel_icon: mdi:sync
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: once
+options:
+  applicationKey: null
+  applicationSecret: null
+  consumerKey: null
+  zoneName: null
+  subDomain: null
+  endpoint: ovh-eu
+  ip4: true
+  ip6: true
+schema:
+  applicationKey: password
+  applicationSecret: password
+  consumerKey: password
+  zoneName: str
+  subDomain: str
+  endpoint: list(ovh-eu|ovh-us|ovh-ca|soyoustart-eu|soyoustart-ca|kimsufi-eu|kimsufi-ca)
+  ip4: bool
+  ip6: bool

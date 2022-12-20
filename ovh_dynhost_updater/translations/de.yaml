@@ -1,0 +1,25 @@
+configuration:
+  applicationKey:
+    name: Application Key
+    description: Application Key aus dem API Token
+  applicationSecret:
+    name: Application Secret
+    description: Application Secret aus dem API Token
+  consumerKey:
+    name: Consumer Key
+    description: Consumer Key aus dem API Token
+  zoneName:
+    name: DNS Zonenname
+    description: (z.B. acme.org)
+  subDomain:
+    name: Subdomain
+    description: (z.B. dynhost)
+  endpoint:
+    name: Endpunkt
+    description: OVH API Endpunkt
+  ip4:
+    name: IPv4
+    description: Update IPv4
+  ip6:
+    name: IPv6
+    description: Update IPv6
